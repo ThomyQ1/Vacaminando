@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:ital,wght@1,100&display=swap");
+* {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(248, 223, 167, 0.25);
+  background-attachment: fixed;
+}
+
+nav {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.grid-templates-column-row {
+  grid-template-columns: 1, 100%;
+  grid-template-rows: 1;
+}
+
+.header {
+  justify-content: center;
+  margin: 0 auto;
+  display: block;
+  height: auto;
+  width: 45%;
+  padding: 5px;
+}
+
+.encabezado {
+  font-size: 25px;
+  text-align: center;
+  margin: 8px;
+  padding: 8px;
+}
+
+.sr {
+  width: 250px;
+  height: auto;
+  padding: 5px;
+}
+
+.botitas {
+  width: 450px;
+  height: 550px;
+}
+
+.article {
+  margin: 5px;
+}
+
+.facebook {
+  width: 40px;
+  height: auto;
+}
+
+.instagram {
+  width: 90px;
+  height: auto;
+}
+
+.redondeo {
+  border-radius: 8px;
+}
+
+/*Productos*/
+
+.productos {
+  margin: 5px;
+  padding: 5px;
+}
+
+.mocasines {
+  width: 420px;
+  height: 519px;
+}
+
+.botitas2 {
+  width: 420px;
+  height: 519px;
+}
+
+/*Nosotros*/
+.img-logo {
+  width: 1250px;
+  height: auto;
+  margin: 10px;
+  padding: 10px;
+}
+
+.encabezadoN {
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+.parraf {
+  margin: 10px;
+  padding: 10px;
+  justify-content: center;
+}
+
+/*Contacto*/
+.mapa {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*Responsive*/
+/* 1er break point*/
+@media (width >768px) {
+  #contenedor-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 20vh 60vh 20vh;
+    grid-template-areas:
+      "one one"
+      "two three"
+      "four five";
+  }
+}
+
+/*2do break point*/
+@media (width >1024px) {
+  #contenedor-grid2 {
+    grid-template-columns: 50vw 25vw 25vw;
+    grid-template-rows: 20vh 50vh 30vh;
+    grid-template-areas:
+      "one one one"
+      "two two two"
+      "three three three"
+      "four four four"
+      "five five five";
+  }
+}
+
+@media (width >320px) {
+  nav img {
+    width: 100px;
+  }
+  #contenedor-grid3 {
+    grid-template-columns: 100vw;
+    grid-template-rows: 100vh;
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five";
+  }
+}
