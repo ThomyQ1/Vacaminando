@@ -12,3 +12,14 @@
 .parraf{
     @include ajuste (5px,5px,center)
 }
+
+//extends//
+.encabezado5{
+    font-family: $mainFont;
+    font-size: $textBg;
+}
+
+.parrafo-nos{
+    @extend .encabezado5;
+    color: $keyColor;
+}

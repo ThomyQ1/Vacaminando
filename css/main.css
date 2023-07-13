@@ -12,6 +12,15 @@
   text-align: center;
 }
 
+.encabezado5, .parrafo-nos {
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+}
+
+.parrafo-nos {
+  color: black;
+}
+
 body {
   background-color: #F2F2F2;
   overflow-x: hidden;
