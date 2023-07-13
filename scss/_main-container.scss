@@ -1,0 +1,27 @@
+main{
+    main >img:first-child{
+        justify-content: center;
+        display: block;
+        width: 45%;
+        height: auto;
+        margin: 0 5px;
+        padding: 5px;
+    }
+    
+    h1{
+        font-size: $textBg;
+        font-family: $mainFont;
+        color: $keyColor;
+        text-align: center;
+        margin: 8px;
+        padding: 8px;
+    }
+
+    section{
+        border-radius: 6px;
+    }
+
+    article{
+        margin: 5px;
+    }
+}

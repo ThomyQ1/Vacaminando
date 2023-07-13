@@ -1,0 +1,36 @@
+@media (max-width <768px) {
+    .map-container{
+      grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+      grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+  
+
+@media (width >1024px){
+    #contenedor-grid2 {
+      grid-template-columns: 50vw 25vw 25vw;
+      grid-template-rows: 20vh 50vh 30vh;
+      grid-template-areas:
+        "one one one"
+        "two two two"
+        "three three three"
+        "four four four"
+        "five five five";
+    }
+}
+  
+@media (width >320px){
+    nav img {
+      width: 100px;
+    }
+    #contenedor-grid3 {
+      grid-template-columns: 100vw;
+      grid-template-rows: 100vh;
+      grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four"
+        "five";
+    }
+}

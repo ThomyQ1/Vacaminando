@@ -1,0 +1,14 @@
+//mixins//
+@mixin ajuste ($margin,$padding,$textalign){
+    padding: $padding;
+    margin: $margin;
+    text-align: center;
+}
+
+.encabezadoN{
+    @include ajuste (5px,5px,center)
+}
+
+.parraf{
+    @include ajuste (5px,5px,center)
+}

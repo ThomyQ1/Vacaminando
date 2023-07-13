@@ -1,0 +1,20 @@
+main{
+    div{
+        img{
+            width: 800px;
+            height: auto;
+            margin: 10px;
+            padding: 10px;
+        }
+        h5{
+            font-family: $mainFont;
+            font-size: $textBg;
+            color: $keyColor;
+        }
+        p{
+            font-family: $mainFont;
+            font-size: 18px;
+            color: $keyColor;
+        }
+    }
+}
